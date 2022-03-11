@@ -1,0 +1,218 @@
+h1 {
+    color:#66B76F;
+    text-align: center;
+    text-shadow: 3px 3px 2px #426145;
+}
+
+.title {color: #338DAA;
+}
+#italic1 {color:#66B76F;
+}
+
+nav {
+    background: #66B76F;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.nav-wrapper    {
+    background-color: #338DAA;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 30px;
+}
+
+
+.container {
+    border: 10px dashed rgb(51, 170, 47);
+    margin: 50px 10px 100px 10px;
+    padding: 10px 30px 10px 30px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: #66B76F;
+    margin: 10px 10px;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#box1 {
+    animation: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 20%;
+    background-image: radial-gradient(circle, green, blue, red);
+}
+
+@keyframes getBigger {
+    0% {transform:scale(1);}
+    50% {transform:scale(2);}
+    100% {transform:scale(.5);}
+}
+
+#box3 {
+    animation: getBigger infinite 8s ease-in;
+    border-radius: 50%;
+    background: orange;
+}
+
+@keyframes changeColours {
+    0% {background-color: orange;}
+    25% {background-color: red;}
+    50% {background-color: purple;}
+    75% {background-color: blueviolet;}
+    100% {background-color: blue;}
+}
+
+#box4 {animation: changeColours 3s infinite;}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 100px;}
+    75% {left: 0px; top: 100px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box5 {
+    position: relative;
+    animation: moveBox 3s infinite;
+}
+
+#box6 {
+    top: 10px;
+    left: 20px;
+    position: relative;
+}
+
+
+
+.circle-img {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 7px 7px 5px #6a6a6a;
+}
+
+.flex {
+    margin: 30px;
+    padding: 20px;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;  
+}
+
+.wrapper {
+    display: grid;
+        grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #ffffff;
+    color: #444;
+    }
+    
+    .Box {
+    background-color: #ffffff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+    
+    }
+    
+    .a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+    }
+    .b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+    }
+    .c {
+    grid-column: col / span 5 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, yellow, purple, orange);
+    }
+    .d {
+    grid-column: col / span  3 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .e {
+    grid-column: col 3 / span  3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(orange,purple,yellow,pink);
+    }
